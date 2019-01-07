@@ -13,16 +13,16 @@ Intent intent;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
         intent=new Intent(this,SecondActivity.class);
-        getSupportActionBar().setTitle("Crypto String");
+        getSupportActionBar().setTitle(R.string.cryptostring);
     }
 
     public void encryption(View view) {
-        intent.putExtra("Id",1);
+        intent.putExtra("Id",1);//having an id to know which button is selected
         startActivity(intent);
     }
 
     public void decryption(View view) {
-        intent.putExtra("Id",2);
+        intent.putExtra("Id",2);//having an id to know which button is selected
         startActivity(intent);
     }
 }
