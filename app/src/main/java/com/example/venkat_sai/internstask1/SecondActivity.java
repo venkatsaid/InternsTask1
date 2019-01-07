@@ -70,7 +70,7 @@ public class SecondActivity extends AppCompatActivity {
 
         }
         else if(id==2){
-            for(int i=1;i<s.length();i+=2){//reading numbers at the odd positions 
+            for(int i=1;i<s.length();i+=2){//reading numbers at the odd positions
                 int j=Character.getNumericValue(s.charAt(i));
                 while(j>0)
                 {
